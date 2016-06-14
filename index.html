@@ -1,0 +1,247 @@
+
+
+<style>
+body{
+	background-color: steelblue ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	background-color: whitesmoke  ;
+}
+.main{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #DA251C;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	overflow: hidden;
+	z-index: 100;
+}
+.bottom{
+	background-color: #C5A17D;
+	width: 200px;
+	height: 100px;
+	border-radius: 200px/100px;
+	z-index: 101;
+	transform: rotate(-15deg);
+	position: absolute;
+	top: 230px;
+	left: 80px;
+
+}
+.left-eye{
+	width: 80px;
+	height: 70px;
+	background-color: white;
+	border: 4px solid black;
+	border-radius: 80px/70px;
+	position: absolute;
+	top: 100px;
+	left: 120px;
+	transform: rotate(2deg);
+	z-index: 101;
+}
+.right-eye{
+	width: 80px;
+	height: 70px;
+	background-color: white;
+	border: 4px solid black;
+	border-radius: 80px/70px;
+	position: absolute;
+	top: 100px;
+	left: 190px;
+	transform: rotate(-2deg);
+	z-index: 102;
+}
+.left-eye-ball{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: black;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+}
+.right-eye-ball{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: black;
+	position: absolute;
+	top: 25px;
+	left: 20px;
+}
+.left-eyebrow{
+	border-bottom: 100px solid black; 
+	border-left: 3px solid transparent; 
+	border-right: 3px solid transparent; 
+	height: 0; 
+	width: 15px; 
+	transform: rotateZ(105deg);
+	position: absolute;
+	z-index: 103;
+	top: 55;
+	left: 145;
+}
+.right-eyebrow{
+	border-bottom: 100px solid black; 
+	border-left: 3px solid transparent; 
+	border-right: 3px solid transparent; 
+	height: 0; 
+	width: 15px; 
+	transform: rotateZ(-115deg);
+	position: absolute;
+	z-index: 103;
+	top: 50;
+	left: 225;
+}
+.upper-mouth{
+	width: 0; 
+	height: 0; 
+	border-left: 30px solid transparent; 
+	border-right: 30px solid transparent; 
+	border-bottom: 40px solid #D08623; 
+	position: absolute;
+	top: 145px;
+	left: 165px;
+	z-index: 103;
+	transform: scale(1, 0.9);
+}
+.bottom-mouth{
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent; 
+	border-right: 20px solid transparent; 
+	border-top: 30px solid #D08623; 
+	position: absolute;
+	top: 185px;
+	left: 170px;
+	z-index: 103;
+	transform: scale(1, 0.9);
+}
+.header1{
+	width: 80px;
+	height: 40px;
+	position: absolute;
+	z-index: 101;
+	background-color: #DA251C;
+	transform: rotateZ(30deg);
+	border-radius: 80px/40px;
+	top: 30px;
+    left: 100px;
+}
+.header2{
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	z-index: 101;
+	background-color: #DA251C;
+	transform: rotateZ(10deg);
+	border-radius: 60px/30px;
+	top: 50px;
+    left: 85px;
+}
+.tail{
+	background-color: black;
+	z-index: 99;
+}
+.tail1{
+	width: 40px;
+	height: 20px;
+	transform: rotateZ(45deg);
+	position: absolute;
+	top: 150px;
+	left: 25px;
+}
+.tail2{
+	width: 50px;
+	height: 30px;
+	transform: rotateZ(10deg);
+    position: absolute;
+    top: 165px;
+    left: 5px;
+}
+.tail3{
+	width: 40px;
+	height: 20px;
+	transform: rotateZ(-5deg);
+	position: absolute;
+	top: 195px;
+	left: 20px;
+}
+.cheek{
+	background-color: #85242B;
+	z-index: 100;
+}
+.cheek1{
+	width: 20px;
+	height: 40px;
+	border-radius: 20px/40px;
+	transform:  rotateZ(-15deg);
+	position: absolute;
+	top: 170px;
+	left: 35px;
+}
+.cheek2{
+	width: 30px;
+	height: 50px;
+	border-radius: 30px/50px;
+	transform:  rotateZ(-10deg);
+	position: absolute;
+	top: 150px;
+	left: 70px;
+}
+.cheek3{
+	width: 40px;
+	height: 60px;
+	border-radius: 40px/60px;
+	transform:  rotateZ(-5deg);
+	position: absolute;
+	top: 130px;
+	left: 110px;
+}
+
+</style>
+
+
+
+<body>
+
+	<div class="container">
+		<div class="header1"></div>
+		<div class="header2"></div>
+		<div class="main">
+		<div class="bottom"></div>
+			<div class="cheek cheek1"></div>
+			<div class="cheek cheek2"></div>
+			<div class="cheek cheek3"></div>
+			<div class="left-eyebrow">
+			</div>
+			<div class="right-eyebrow">
+			</div>
+			<div class="left-eye">
+				<div class="left-eye-ball">
+				</div>
+			</div>
+			<div class="right-eye">
+				<div class="right-eye-ball"></div>
+			</div>
+			<div class="upper-mouth"></div>
+			<div class="bottom-mouth"></div>
+			</div>
+			
+			<div class="tail tail1"></div>
+			<div class="tail tail2"></div>
+			<div class="tail tail3"></div>
+		</div>
+		
+	</div>
+</body>
